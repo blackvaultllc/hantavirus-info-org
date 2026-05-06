@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'HantavirusInfo.org',
   description: 'Comprehensive information about Hantavirus symptoms, prevention, treatment, and safety guidelines.',
   url: 'https://hantavirusinfo.org',
-  ogImage: '/og-image.png',
+  ogImage: '/og-image.png', // Updated for deployment
   links: {
     twitter: 'https://twitter.com/hantavirusinfo',
     github: 'https://github.com/hantavirusinfo',
