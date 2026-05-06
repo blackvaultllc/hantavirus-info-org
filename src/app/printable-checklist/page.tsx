@@ -1,27 +1,13 @@
+'use client';
+
 import Link from 'next/link';
 import { Disclaimer } from '@/components/layout/disclaimer';
 import { Breadcrumbs } from '@/components/seo/breadcrumbs';
-import { generatePageMetadata } from '@/components/seo/metadata';
-import { generateMedicalWebPageSchema, SchemaMarkup } from '@/components/seo/schema-markup';
 import { Printer, CheckCircle, AlertTriangle } from 'lucide-react';
-
-export const metadata = generatePageMetadata({
-  title: 'Printable Hantavirus Cleaning Checklist',
-  description: 'Download and print this comprehensive Hantavirus safe cleaning checklist. Use it as a reference when cleaning rodent-contaminated areas.',
-  canonical: 'https://hantavirusinfo.org/printable-checklist',
-});
-
-const schema = generateMedicalWebPageSchema({
-  name: 'Printable Hantavirus Cleaning Checklist',
-  description: 'Printable checklist for safe rodent cleanup procedures',
-  url: 'https://hantavirusinfo.org/printable-checklist',
-  medicalAudience: 'Patient',
-});
 
 export default function PrintableChecklist() {
   return (
     <>
-      <SchemaMarkup schema={schema} />
       <div className="min-h-screen bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
           <Breadcrumbs items={[{ name: 'Printable Checklist', href: '/printable-checklist' }]} className="mb-8" />
